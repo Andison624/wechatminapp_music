@@ -5,8 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        phone: '',//用戶手機號碼
-        password: ''//用戶密碼
+        phone: '', //用戶手機號碼
+        password: '' //用戶密碼
     },
 
     /**
@@ -15,14 +15,47 @@ Page({
     onLoad: function (options) {
 
     },
-    handleInput(event){
+    handleInput(event) {
         // let type = event.currentTarget.id;//使用id傳值
-        let type = event.currentTarget.dataset.type;//使用data-key=value傳值,需多個傳值時使用 
+        let type = event.currentTarget.dataset.type; //使用data-key=value傳值,需多個傳值時使用 
         // console.log(type, event.detail.value)
-        console.log(event)
+        // console.log(event)
         this.setData({
             [type]: event.detail.value
         })
+    },
+    login() {
+        //收集登入表單單項數據
+        let {
+            phone,
+            password
+        } = this.data;
+        //前端驗證(內容是否為空/手機號碼格式是否正確)
+        if (!phone) { //內容為空時
+            wx.showToast({
+                title: '請輸入電話號碼',
+                icon: 'none'
+            })
+        }
+        let phoneReg = /^1(3|4|5|6|7|8|9)\d{9}$/; //檢查電話格式是否正確(中國大陸)
+        if (!phoneReg.test(phone)) { //格式不正確
+            wx.showToast({
+                title: '請輸入正確的手機號碼格式',
+                icon: 'none'
+            })
+            return;
+        }
+        if (!password) {
+            wx.showToast({
+                title: '請輸入密碼',
+                icon: 'none'
+            })
+            return;
+        }
+        wx.showToast({
+            title: '前端驗證通過'
+        })
+
     },
 
     /**
