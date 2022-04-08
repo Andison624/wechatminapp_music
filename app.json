@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/more/more",
+        "components/NavHeader/NavHeader",
+        "pages/personal/personal",
+        "pages/video/video"
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "window": {
+        "navigationBarBackgroundColor": "#d43c33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "云音樂",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主頁",
+            "iconPath": "/pages/static/images/tabs/tab-home.png",
+            "selectedIconPath": "/pages/static/images/tabs/tab-home-current.png"
+        }, {
+            "pagePath": "pages/video/video",
+            "text": "視頻",
+            "iconPath": "/pages/static/images/tabs/select.png",
+            "selectedIconPath": "/pages/static/images/tabs/selected.png"
+        }, {
+            "pagePath": "pages/personal/personal",
+            "text": "個人頁面",
+            "iconPath": "/pages/static/images/tabs/tab-my.png",
+            "selectedIconPath": "/pages/static/images/tabs/tab-my-current.png"
+        }],
+        "color": "#333",
+        "selectedColor": "#d43c33",
+        "backgroundColor": "#fff"
+    }
+}

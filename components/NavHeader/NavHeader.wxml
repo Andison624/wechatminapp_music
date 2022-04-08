@@ -1,0 +1,9 @@
+<!--components/NavHeader/NavHeader.wxml-->
+<view class="header">
+    <text class="title">{{title}}</text>
+    <view>
+        <text>{{nav}}</text>
+        <button class="more" catchtap="toMore">查看更多 </button>
+    </view>
+</view>
+

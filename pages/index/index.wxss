@@ -1,0 +1,108 @@
+/* pages/index/index.wxss */
+.banners {
+    widows: 100%;
+    height: 300rpx;
+}
+
+.banners image {
+    width: 100%;
+    height: 100%;
+}
+
+/* 導航區 */
+.navContainer {
+    display: flex;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.navItem .iconfont {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100rpx;
+    background: rgb(240, 19, 19);
+    font-size: 50rpx;
+    color: white;
+    margin: 20rpx 0;
+}
+
+.navItem text {
+    font-size: 26rpx;
+}
+
+/* 歌曲區 */
+.recommendContainer {
+    padding: 20rpx;
+}
+
+/* 滾動視圖區 */
+.recommendScroll {
+    display: flex;
+    height: 300rpx;
+}
+
+.scrollItem {
+    width: 200rpx;
+    margin: 0 10rpx;
+}
+
+.scrollItem image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+}
+
+.scrollItem text {
+    font-size: 26rpx;
+    /* 隱藏文本內容 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* 排行榜 */
+.topListSwiper {
+    height: 400rpx;
+}
+
+.swiperItem {
+    width: 96%;
+    background: #fbfbfb;
+}
+
+.swiperItem.title {
+    font-size: 30rpx;
+    line-height: 80rpx;
+}
+
+.musicItem {
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.musicItem image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 6rpx;
+}
+
+.musicItem .count {
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.musicItem .musicName {
+    height: 100rpx;
+    line-height: 100rpx;
+}
