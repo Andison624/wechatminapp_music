@@ -1,11 +1,12 @@
-// pages/more/more.js
+// pages/logins/login.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        phone: '',//用戶手機號碼
+        password: ''//用戶密碼
     },
 
     /**
@@ -13,6 +14,15 @@ Page({
      */
     onLoad: function (options) {
 
+    },
+    handleInput(event){
+        // let type = event.currentTarget.id;//使用id傳值
+        let type = event.currentTarget.dataset.type;//使用data-key=value傳值,需多個傳值時使用 
+        // console.log(type, event.detail.value)
+        console.log(event)
+        this.setData({
+            [type]: event.detail.value
+        })
     },
 
     /**
