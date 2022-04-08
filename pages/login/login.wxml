@@ -1,27 +1,26 @@
-
 <view class="container">
-  <view class="wrapper">
-    <view class="left-top-sign">LOGIN</view>
-    <view class="welcome">
-      歡迎回来！
+    <view class="wrapper">
+        <view class="left-top-sign">LOGIN</view>
+        <view class="welcome">
+            歡迎回来！
+        </view>
+        <view class="input-content">
+            <view class="input-item">
+                <text class="tit">手機號碼</text>
+                <input type="text" placeholder="請輸入手機號碼" data-test="abc" data-type="phone" id="phone" bindinput="handleInput" />
+            </view>
+            <view class="input-item">
+                <text class="tit">密碼</text>
+                <input type="password" placeholder="請輸入密碼" data-test="abc" data-type="password" id="password" bindinput="handleInput" />
+            </view>
+        </view>
+        <button class="confirm-btn" bindtap="login">登錄</button>
+        <view class="forget-section">
+            忘記密碼?
+        </view>
     </view>
-    <view class="input-content">
-      <view class="input-item">
-        <text class="tit">手機號碼</text>
-        <input  type="text" placeholder="请输入手机号码" data-test="abc" data-type="phone" id="phone" bindinput="handleInput"/>
-      </view>
-      <view class="input-item">
-        <text class="tit">密碼</text>
-        <input type="password"  placeholder="请输入密码" data-test="abc" data-type="password" id="password" bindinput="handleInput"/>
-      </view>
+    <view class="register-section">
+        還沒有帳號?
+        <text>馬上註冊</text>
     </view>
-    <button class="confirm-btn" bindtap="login">登錄</button>
-    <view class="forget-section">
-      忘記密碼?
-    </view>
-  </view>
-  <view class="register-section">
-    還沒有帳號?
-    <text >馬上註冊</text>
-  </view>
 </view>
