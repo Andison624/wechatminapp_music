@@ -1,2 +1,52 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="video">
+  <!-- 头部区域 -->
+  <view class="header">
+    <image src="/pages/static/images/video/video.jpg"></image>
+    <view class="search" bindtap="toSearch">
+      搜索音乐
+    </view>
+    <image src="/pages/static/images/logo.png"></image>
+  </view>
+  <!-- 導航區域 -->
+  <scroll-view scroll-x class="navScroll" enable-flex>
+    <view class="navItem">
+      <view class="navContent active" id="item1">
+        1+1
+      </view>
+    </view>
+    <view class="navItem">
+      <view class="navContent active" id="item2">
+        1+1=999
+      </view>
+    </view>
+    <view class="navItem">
+      <view class="navContent active" id="item3">
+        1+1
+      </view>
+    </view>
+    <view class="navItem">
+      <view class="navContent active" id="item4">
+        1+1=999
+      </view>
+    </view>
+    <view class="navItem">
+      <view class="navContent active" id="item5">
+        1+1
+      </view>
+    </view>
+    <view class="navItem">
+      <view class="navContent active" id="item6">
+        1+1=999
+      </view>
+    </view>
+
+  </scroll-view>
+  <!-- 視頻區域 -->
+  <scroll-view scroll-y class="videoScroll">
+    <view class="videoItem">
+      <text>333333333333</text>
+    </view>
+  </scroll-view>
+
+</view>
