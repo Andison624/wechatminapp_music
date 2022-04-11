@@ -19,6 +19,11 @@ Page({
   onLoad: function (options) {
 
   },
+  toLogin(){
+    wx.navigateTo({
+      url: '/pages/login/login',
+    })
+  },
   handleTouchStart(event) {
     this.setData({
       coverTransition: ""
