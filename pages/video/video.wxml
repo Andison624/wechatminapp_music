@@ -45,7 +45,16 @@
   <!-- 視頻區域 -->
   <scroll-view scroll-y class="videoScroll">
     <view class="videoItem">
-      <text>333333333333</text>
+      <video></video>
+      <p>321321321</p>
+    </view>
+    <view class="videoItem">
+      <video></video>
+      <p>321</p>
+    </view>
+    <view class="videoItem">
+      <video></video>
+      <p>321</p>
     </view>
   </scroll-view>
 

@@ -1,32 +1,57 @@
 /* pages/video/video.wxss */
-.video .header{
+.video .header {
     display: flex;
     padding: 10rpx;
 }
-.video .header image{
+
+.video .header image {
     height: 60rpx;
     width: 60rpx;
 }
-.video .header .search{
+
+.video .header .search {
     border: 1rpx solid #eee;
-    margin: 0 20rpx ;
+    margin: 0 20rpx;
     line-height: 60rpx;
     flex: 1;
     text-align: center;
     color: #d43c33;
     font-size: 26rpx;
 }
- /* 導航區域 */
- .navScroll{
-     display: flex;
-     white-space: nowrap;
- }
- .navItem {
-     padding: 0 30rpx ;
-     font-size: 28rpx;
-     height: 60rpx;
-     line-height: 60rpx;
- }
- .active{
-     border-bottom: 1rpx solid #d43c33 ;
- }
+
+/* 導航區域 */
+.navScroll {
+    display: flex;
+    height: 100rpx;
+    white-space: nowrap;
+}
+
+.navItem {
+    padding: 0 30rpx;
+    height: 60rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+
+.active {
+    border-bottom: 1rpx solid #d43c33;
+}
+
+.videoItem {
+    display: grid;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border: 1rpx solid #999999;
+    padding-top: 40rpx;
+}
+
+.videoItem video {
+    border-radius: 10rpx;
+    width: 700rpx;
+}
+
+.videoItem p {
+    margin: 40rpx;
+    font-size: 26rpx;
+}
