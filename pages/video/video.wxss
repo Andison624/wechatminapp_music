@@ -37,7 +37,13 @@
     border-bottom: 1rpx solid #d43c33;
 }
 
+.videoScroll{
+    margin-top: 10rpx;
+    height: calc(100vh - 200rpx);
+}
+
 .videoItem {
+    padding: 0 3%;
     display: grid;
     text-align: left;
     align-items: center;
